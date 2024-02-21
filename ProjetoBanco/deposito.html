@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css"/>
+    
+   
+    <title>Tela inicial - Deposito</title>
+
+</head>
+<body>
+
+    <section id="topo">
+        <h2 class="title">Banco Sustentável</h2>
+    </section>
+
+    <main class="container">
+        
+        <section id="conteudo">
+            <span> 
+                <h3>Quanto você deseja depositar?</h3>
+            </span>
+        
+                <form>
+                    <input class="valorDeposito" type="text" id="valorDeposito" >
+                    <button type="'button" class="button-deposito" onclick="realizarAcoes('depositar')">Depositar</button>
+                </form>
+        </section>
+
+        <div >
+          <button class="botton-saque" onclick="window.location.href = 'index.html'">Sacar</button>
+        </div>
+
+        <div>
+            <input class="input-saldo" type="text" id="input-saldo" onchange="consultarSaldo()" disabled > 
+        <div>
+
+    </main>
+    <script src="calc.js"></script>
+</body>
+</html>

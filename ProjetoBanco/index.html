@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    
+   
+    <title>Tela inicial - Saque</title>
+
+</head>
+<body>
+
+    <section id="topo">
+    
+        <h2 class="title">Banco Sustentável</h2>
+    </section>
+
+    <main class="container">
+        
+        <section id="conteudo">
+            <span> 
+                <h3>Quanto você deseja sacar?</h3>
+            </span>
+        
+                <form>
+                    <input class="valorRetirada" type="text" id="valorRetirada" >
+                    <button type="'button" class="button-saque" onclick="realizarAcoes('sacar')" >Sacar</button>
+                </form>
+        </section>
+
+        <div >
+          <button class="botton-deposito" onclick="window.location='deposito.html'">Depositar</button>
+        </div>
+
+        <div>
+            <input class="input-saldo" type="text" id="input-saldo" onchange="consultarSaldo()" disabled > 
+        <div>
+
+    </main>
+    <script src="calc.js"></script>
+</body>
+</html>
