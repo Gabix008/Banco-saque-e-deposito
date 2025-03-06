@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pilar de Abstração</title>
+
+        <script >
+            let nome='Gabrielly'
+            let idade=20
+            let curso='Engenharia de Software'
+            let profissao = 'Estagiaria'
+
+           let dados = {
+            nome,
+            idade,
+            profissao, 
+            curso,
+
+            exibirResumo(){
+                console.log(`Eu sou, ${this.nome} tenho ${this.idade} anos, faço ${this.curso}, e atualmente sou ${this.profissao} na empresa Produzindo certo`)
+            }
+
+           }
+           console.log(dados)
+           dados.exibirResumo()
+        </script>
+    </head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

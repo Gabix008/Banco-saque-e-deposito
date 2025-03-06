@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Funcoes Parametros</title>
+
+        <script type="text/babel">
+            /*let quadrado = function(x=5){
+                return x*x
+            }*/
+
+            //let quadrado = x => x*x
+    
+          /*  let parOuImpar = function(x=3){
+                if(x%2 != 0){
+                   return'impar'
+                } else{
+                    return'par'
+                }
+            }
+            */
+
+           /* let parOuImpar = (x=3) => {
+                if(x%2 != 0){
+                   return'impar'
+                } else{
+                    return'par'
+                }
+            }*/
+
+            let parOuImpar = x => x%2 !=0 ? 'impar' : 'par'
+
+
+            document.write(parOuImpar(159))
+            //document.write(quadrado(3))
+        </script>
+    </head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

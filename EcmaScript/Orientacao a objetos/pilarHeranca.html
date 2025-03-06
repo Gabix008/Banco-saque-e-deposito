@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pilar de Encapsulamento</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            class Animal{
+               
+                constructor(){
+                    this.cor = ''
+                    this.tamanho = null
+                }
+
+                dormir(){
+                    console.log('Dormir')
+                }
+            }
+
+            class Cachorro extends Animal{
+                
+                constructor(){
+                    super()
+                    this.orelhas = 'grandes'
+                }
+                correr(){
+                    console.log('Correr')
+                }
+
+                rosnar(){
+                    console.log('Rosnar')
+                }
+            }
+
+            class Passaro extends Animal{
+                
+                constructor(){
+                    super()
+                    this.bico = 'pequeno'
+                }
+                voar(){
+                    console.log('voar')
+                }
+                
+            }
+
+            class Papagaio extends Passaro{
+                constructor(){
+                    super()
+                    this.sabeFalar = true
+                }
+
+                falar(){
+                    console.log('falar')
+                }
+            }
+
+            let cachorro = new Cachorro()
+            let passaro = new Passaro()
+            let papagaio = new Papagaio()
+
+            papagaio.falar()
+            papagaio.dormir()
+            cachorro.dormir()
+            passaro.dormir()
+            passaro.voar()
+        </script>
+         
+    </body>
+</html>

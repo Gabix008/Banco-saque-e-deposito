@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pilar de Abstração</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>
+            (function() {
+                /*let qtd_pernas
+                let giratoria 
+                let cor
+                let cadeiras = Array()
+                
+                cadeiras[0] = Array()
+                cadeiras[0]['qtd_pernas'] = 4
+                cadeiras[0]['giratoria'] = true
+                cadeiras[0]['cor'] = 'vermelho'
+
+                cadeiras[1] = Array()
+                cadeiras[1]['qtd_pernas'] = 4
+                cadeiras[1]['giratoria'] = false
+                cadeiras[1]['cor'] = 'vermelho'
+
+        
+
+                girar_cadeira = (indice) => {
+                    if (cadeiras[indice] ['giratoria'] === true) {
+                        console.log('A cadeira girou')
+                    } else {
+                        console.log('A cadeira não é giratoria')
+                    }
+                }
+
+                adicionarCadeiras = (qtd_pernas, giratoria, cor) =>{
+                    let cadeira = Array()
+
+                    cadeira['qtd_pernas'] = qtd_pernas
+                    cadeira['giratoria'] = giratoria
+                    cadeira['cor'] = cor
+
+                    cadeiras.push(cadeira)
+                }
+                adicionarCadeiras(3, false, 'verde')
+                console.log(cadeiras)
+                girar_cadeira()*/
+            
+
+
+                //OO
+                   class Cadeira{
+                        constructor(qtd_pernas, giratoria, cor){
+                            this.qtd_pernas = qtd_pernas
+                            this.giratoria = giratoria
+                            this.cor = cor
+                        }
+
+                        girar_cadeira(){
+                            if (this.giratoria === true) {
+                                console.log('A cadeira girou')
+                            } else {
+                                console.log('A cadeira não é giratoria')
+                            }
+                        }
+                    }
+
+                    
+                    let cadeiras = Array()
+                    cadeiras.push(new Cadeira(4, true, 'branco'))
+                    console.log(cadeiras)
+                
+
+                    class Sofa{
+                        constructor(qtdLugares, reclinavel, cor){
+                            this.qtdLugares = qtdLugares
+                            this.reclinavel = reclinavel
+                            this.cor=cor
+                        }
+
+                        reclinar_sofa(){
+                            if(this.reclinavel==true){
+                                console.log('O sofá é reclinavel')
+                            } else{
+                                console('O sofá não é reclinavel')
+                            }
+                        }
+                    }
+                        let sofas = Array()
+                        sofas.push(new Sofa(2, true, 'vermelho'))
+                        console.log(sofas)
+                })()
+
+        </script>
+         
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var objetos = Array('Mesa', 'Garrafa', 'Mouse')
+
+        function validaCampo(){
+         var valorCampo = document.getElementById('elemento').value
+
+         if(valorCampo == ''){
+            alert('Informe um valor valido!')
+         } else{
+
+            if(objetos.indexOf(objetos) != -1 ){
+                alert('Objeto já foi adicionado')
+            } else{
+                objetos.push(valorCampo)
+                console.log(objetos)
+
+                document.getElementById('elemento').value = ''
+            }
+         }
+        }
+
+        function ordenaValores(){
+           console.log(objetos.sort())
+
+        }
+        
+
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="elemento" > 
+    <button type="button" onclick="validaCampo()" id='campo'>Adicionar</button>
+    <button type="button" onclick="ordenaValores()" id="campo">Ordenar</button>
+</body>
+</html>

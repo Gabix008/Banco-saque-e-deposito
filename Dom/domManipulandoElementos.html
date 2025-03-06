@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+    <script>
+        function modificaEstilo(corDeFundo,l,a){
+            document.getElementById('elemento').style.background = corDeFundo
+            document.getElementById('elemento').style.width = l
+            document.getElementById('elemento').style.height = a
+        }
+        
+    </script>
+
+</head>
+<body>
+    <h3> Manipulando estilo</h3>
+    <button type="button" onclick="modificaEstilo('#DC143C', '200px', '50px')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('#FFFF00', '150px', '100px')">Amarelo</button>
+    <button type="button" onclick="modificaEstilo('#E0FFFF', '200px', '150px')">Azul</button>
+
+    <hr />
+    <div style="border: solid 1px #ccc; width: 100px; height: 100px;" id="elemento"></div>
+</body>
+</html>

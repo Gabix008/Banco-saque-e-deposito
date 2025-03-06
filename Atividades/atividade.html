@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+       
+        var num = prompt('Digite um número: ')
+        var operacao = prompt('Digite a operação: ')
+        var num2 = prompt('Digite outro número: ')
+
+        
+
+       function calcular(num,num2, operacao){
+            num=parseInt(num)
+            num2=parseInt(num2)
+
+            /*switch(operacao){
+
+                case 'soma':
+                    resultado = num+num2
+                break;
+
+                case 'subtracao':
+                    resultado = num+num2
+                break;
+                return resultado;
+            }*/
+
+            if(operacao == 'soma'){
+                resultado = num+num2
+            }
+            else if(operacao == 'subtracao'){
+                resultado = num-num2
+            }
+            return resultado;
+       }
+       var resultado = calcular(num,num2,operacao)
+       document.write('O resultado eh: '+ resultado)
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+</html>
